@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<TITLE>Document Servlet</TITLE>
+</HEAD>
+<BODY BGCOLOR="WHITE">
+
+<H2>View RSS feeds</H2>
+<FORM METHOD="POST" ACTION="rss">
+<INPUT TYPE="hidden" NAME="action" value="view">
+<INPUT TYPE="SUBMIT" VALUE="View Feeds">
+</FORM>
+
+<p>
+
+<FORM METHOD="POST" ACTION="rss">
+<INPUT TYPE="hidden" NAME="action" value="add">
+<INPUT TYPE="TEXT" NAME="url" SIZE=100>
+<br>
+comma separated list of tags
+<br>
+<INPUT TYPE="TEXT" NAME="tags" SIZE=100>
+
+<P>
+<INPUT TYPE="SUBMIT" VALUE="Add Feed">
+<INPUT TYPE="RESET">
+</FORM>
+
+
+</BODY>
+</HTML> 
