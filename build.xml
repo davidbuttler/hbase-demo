@@ -1,4 +1,4 @@
-<project name="reconcile-hbase" default="compile" basedir="." >
+<project name="hbase-demo" default="compile" basedir="." >
 
 	<description>Code to interact with hbase</description>
 
