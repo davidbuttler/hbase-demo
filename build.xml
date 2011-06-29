@@ -13,6 +13,7 @@
 		<java fork="yes" classname="gov.llnl.demo.CreateTable" failonerror="true">
 			<classpath refid="classpath" />
 			<arg value="${table}" />
+			<arg value="${cf}" />
 		</java>
 	</target>
 
