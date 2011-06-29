@@ -1,0 +1,19 @@
+<project name="reconcile-hbase" default="compile" basedir="." >
+
+	<description>Code to interact with hbase</description>
+
+	<property name="antMavenBuildDir" value="../ant-maven-build"/>
+	<import file="${antMavenBuildDir}/build.xml"/>
+	
+	<!--  =================================================================== -->
+	<!--  run targets                     -->
+	<!--  =================================================================== -->
+	<target name="createTable" depends="compile" description="create a table">
+		<echo>HBASE_HOME: ${env.HBASE_HOME}</echo>
+		<java fork="yes" classname="gov.llnl.demo.CreateTable" failonerror="true">
+			<classpath refid="classpath" />
+			<arg value="${table}" />
+		</java>
+	</target>
+
+</project>
